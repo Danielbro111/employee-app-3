@@ -12,7 +12,7 @@ val prsiPercentage = 5.2
 val annualBonus = 1450.50
 val cycleToWorkMonthlyDeduction = 54.33
 
-fun main(args: Array<String>){
+fun main() {
     println("Payslip Printer")
     println(getFullName())
     printPayslip()
