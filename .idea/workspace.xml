@@ -4,37 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ca39322-ec02-42c1-aa77-6a22355fc84e" name="Changes" comment="Add Employee PayslipPrinter">
-      <change afterPath="$PROJECT_DIR$/../.bash_history" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.gitconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.lesshst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Thumbs.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../controlflow" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../employee-app-1.0/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../employee-app-1.0/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../employee-app-1.0/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../employee-app-1.0/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../employee-app-1.0/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../employee-app-1.0/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../employee-app-1.0/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../employee-app-1.0/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../employee-app-1.0/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../employee-app-1.0/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../employee-app-1.0/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../employee-app-1.0/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../employee-app-1.0/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../employee-app-1.0/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../employee-app-1.0/src/main/kotlin/ie/setu/main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../employee-app-2.0/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../employee-app-2.0/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../proof of college.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../student ID.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../student id 1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../sweng" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../swengpracticals" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="9ca39322-ec02-42c1-aa77-6a22355fc84e" name="Changes" comment="Refactor my code to incorporate string templates&#10;Add a function to round up decimals &#10;Change normal print string to raw string&#10;Fix error">
+      <change beforePath="$PROJECT_DIR$/../sweng" beforeDir="false" afterPath="$PROJECT_DIR$/../sweng" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +76,14 @@
     ]
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Kotlin.MainKt (1)">
+    <configuration name="MainKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ie.setu.MainKt" />
+      <module name="employee-app.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ie.setu.main.kt.MainKt" />
       <module name="employee-app.main" />
@@ -115,6 +93,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.MainKt (1)" />
         <item itemvalue="Kotlin.MainKt" />
       </list>
     </recent_temporary>
@@ -136,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726243266266</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Refactor my code to incorporate string templates&#10;Add a function to round up decimals &#10;Change normal print string to raw string">
+      <option name="closed" value="true" />
+      <created>1726672705798</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1726672705798</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -164,6 +151,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add Employee PayslipPrinter" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Employee PayslipPrinter" />
+    <MESSAGE value="Refactor my code to incorporate string templates&#10;Add a function to round up decimals &#10;Change normal print string to raw string" />
+    <MESSAGE value="Refactor my code to incorporate string templates&#10;Add a function to round up decimals &#10;Change normal print string to raw string&#10;Fix error" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor my code to incorporate string templates&#10;Add a function to round up decimals &#10;Change normal print string to raw string&#10;Fix error" />
   </component>
 </project>

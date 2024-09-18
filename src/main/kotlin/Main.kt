@@ -15,10 +15,10 @@ val cycleToWorkMonthlyDeduction = 54.33
 fun main() {
     println("Payslip Printer")
     println(getFullName())
-    printPayslip()
+    getPayslip()
 }
 
-fun printPayslip(){
+fun getPayslip(){
 
     val monthlySalary = (grossSalary/12)
     val monthlyPrsi = monthlySalary * (prsiPercentage / 100)
