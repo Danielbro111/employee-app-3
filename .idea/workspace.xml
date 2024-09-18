@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ca39322-ec02-42c1-aa77-6a22355fc84e" name="Changes" comment="Refactor my code to incorporate string templates&#10;Add a function to round up decimals &#10;Change normal print string to raw string&#10;Fix error">
+    <list default="true" id="9ca39322-ec02-42c1-aa77-6a22355fc84e" name="Changes" comment="Change &quot;PrintPaySlip&quot; to getPaySlip">
+      <change beforePath="$PROJECT_DIR$" beforeDir="false" afterPath="$PROJECT_DIR$" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../sweng" beforeDir="false" afterPath="$PROJECT_DIR$/../sweng" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,6 +65,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Gradle.Build employee-app.executor": "Run",
+    "Kotlin.MainKt (1).executor": "Run",
     "Kotlin.MainKt.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -123,7 +127,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726672705798</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Change &quot;PrintPaySlip&quot; to getPaySlip">
+      <option name="closed" value="true" />
+      <created>1726673187948</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1726673187948</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -153,6 +165,7 @@
     <MESSAGE value="Add Employee PayslipPrinter" />
     <MESSAGE value="Refactor my code to incorporate string templates&#10;Add a function to round up decimals &#10;Change normal print string to raw string" />
     <MESSAGE value="Refactor my code to incorporate string templates&#10;Add a function to round up decimals &#10;Change normal print string to raw string&#10;Fix error" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor my code to incorporate string templates&#10;Add a function to round up decimals &#10;Change normal print string to raw string&#10;Fix error" />
+    <MESSAGE value="Change &quot;PrintPaySlip&quot; to getPaySlip" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change &quot;PrintPaySlip&quot; to getPaySlip" />
   </component>
 </project>
