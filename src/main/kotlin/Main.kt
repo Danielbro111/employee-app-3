@@ -1,48 +1,53 @@
-package ie.setu.main.kt
+package ie.setu
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-fun main() {
+import kotlin.math.round
 
+val firstName = "Joe"
+val surname = "Soap"
+val gender = 'm'
+val employeeID = 6143
+val grossSalary = 67543.21
+val payePercentage = 38.5
+val prsiPercentage = 5.2
+val annualBonus = 1450.50
+val cycleToWorkMonthlyDeduction = 54.33
 
-    PayslipPrinter ()
-
-
+fun main(args: Array<String>){
+    println("Payslip Printer")
+    println(getFullName())
+    printPayslip()
 }
-fun PayslipPrinter () {
 
-    println("------------------------------------------------------------------------------------------------------------------------------------------")
-    println("|                                                     Monthly Payslip                                                                    |")
-    println("|----------------------------------------------------------------------------------------------------------------------------------------|")
-    println("|                                                                                                                                        |")
-    println("|   EMPLOYEE NAME: " + fName+sName+ "("+ Gender +  ")"      +             "EMPLOYEE ID: "+EmployeeID+                                     "|")
-    println("|                                                                                                                                         |")
-    println("|-----------------------------------------------------------------------------------------------------------------------------------------|")
-    println("|                                                                                                                                         |")
-    println("|   PAYMENT DETAILS                                                        DEDUCTION DETAILS                                              |")
-    println("|                                                                                                                                         |")
-    println("| ----------------------------------------------------------------------------------------------------------------------------------------|")
-    println("|   SALARY: "+ mSal + "                                                    PAYE: " + PAYE +"                                              |")
-    println("|   BONUS: " + AnnualB +"                                                  PRSI: " + PRSI +"                                              |")
-    println("|                                                                          Cycle To Work: "+ Cycle+"                                      |")
-    println("|-----------------------------------------------------------------------------------------------------------------------------------------|")
-    println("|   GROSS: "+ grossSal + "                                      Total Deductions: " + tDeductions+ "                                      |")
-    println("|-----------------------------------------------------------------------------------------------------------------------------------------|")
-    println("|                                     NET PAY: "+( grossSal-tDeductions) +"                                                                 |")
-    println("|                                                                                                                                         |")
-    println("|-----------------------------------------------------------------------------------------------------------------------------------------|")
+fun printPayslip(){
 
+    val monthlySalary = (grossSalary/12)
+    val monthlyPrsi = monthlySalary * (prsiPercentage / 100)
+    val monthlyPaye = monthlySalary * (payePercentage / 100)
+    val grossPay = (monthlySalary + (annualBonus/12))
+    val totalDeductions = (monthlyPrsi + monthlyPrsi + cycleToWorkMonthlyDeduction)
 
-
+    println ("""
+    |_______________________________________________________________________
+    |                          Monthly Payslip                              
+    |_______________________________________________________________________                                                                 
+    |    Employee Name:  ${getFullName()}(${gender.uppercase()})         Employee ID: $employeeID                                                                       
+    |_______________________________________________________________________                                                                 
+    |    PAYMENT DETAILS                        DEDUCTION DETAILS  
+    |_______________________________________________________________________
+    |    Salary: ${roundTwoDecimals(monthlySalary)}                         PAYE: ${roundTwoDecimals(monthlyPaye)}
+    |    Bonus:  ${roundTwoDecimals((annualBonus / 12))}                         PRSI: ${roundTwoDecimals(monthlyPrsi)}
+    |                                           Cycle To Work: $cycleToWorkMonthlyDeduction
+    |_______________________________________________________________________
+    |    Gross:  ${roundTwoDecimals(grossPay)}                        Total Deductions: ${roundTwoDecimals(totalDeductions)}
+    |_______________________________________________________________________
+    |                           NET PAY:${roundTwoDecimals(grossPay - totalDeductions)}
+    |_______________________________________________________________________""".trimMargin("|"))
 }
-val fName = "JOE"
-val sName = "SOAP"
- val Gender = 'M'
- val EmployeeID = 1234
- val grossSal  = 67_543.21
-val mSal = grossSal/12
- val PAYE = mSal*0.385
- val PRSI = mSal*0.52
- val AnnualB = 1450.50
- val Cycle = 54.33
-val tDeductions = PAYE+PRSI+Cycle
+
+fun getFullName() = when (gender){
+    'm', 'M' -> "Mr. $firstName $surname"
+    'f', 'F' -> "Ms. $firstName $surname"
+    else -> "$firstName $surname"
+}
+
+fun roundTwoDecimals(number: Double) = round(number * 100) / 100
